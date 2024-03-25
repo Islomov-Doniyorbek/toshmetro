@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+/* header qismi uchun stil berish */
+header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1.5px solid blue;
+}
+header p {
+    display: flex;
+    align-items: center;
+}
+header img {
+    position: relative;
+}
+
+/* navbar qismi uchun stil berish */
+nav {
+    width: 100%;
+    position: relative;
+    min-height: 20px;
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    border-bottom: 1.5px solid blue;
+}
+nav span {
+    width: calc(100% / 6);
+    position: relative;
+}
+nav span button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border: 1px solid aqua;
+    background: rgb(82, 89, 235);
+    z-index: 29;
+}
+/* main qism uchun stil */
+main {
+    width: 100%;
+    min-height: 85vh;
+    position: relative;
+}
+/* sidebar left qismi uchun stil berish */
+aside {
+    background: rgb(82, 89, 235);
+}
+/* kengligi 1040px dan katta bo'lgan device'lar uchun */
+@media screen and (min-width:996px) {
+    header {
+        padding: 5px 8px 5px 8px;
+    }
+    header img {
+        width: 50px;
+        height: 50px;
+    }
+    header p {
+        font-size: 30px;
+    }
+    nav span {
+        
+        width: calc(100% / 6);
+        display: block;
+        position: relative;
+        left: -105%;
+        animation: animate 4s cubic-bezier(0.16,-0.02, 0.37, 1.01) forwards;
+        animation-delay: 0.9s;
+    }
+    nav button {
+        font-size: 18px;
+    }
+    main {
+        display: grid;
+        /* grid-template-columns: 0.4fr 1fr; */
+        width: 100%;
+    }
+    @keyframes animate{
+        100% {
+            position: relative;
+            left: 0;
+        }
+    }
+    aside {
+        /* position: fixed; */
+        width: 30%;
+        height: 100%;
+        display: none;
+    }
+    #asidebar {
+        display: none;
+    }
+    section#lineSect {
+        width: 100%;
+    }
+    section#lineSect h3 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    section#lineSect h4 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    section#lineSect .information {
+        height: 73vh;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+    }
+    section#lineSect .information .bekat {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    section#lineSect .loc {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        /* background: #000; */
+    }
+
+    main img {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 500px;
+        height: 500px;
+    }
+}
+/* kengligi 440px dan kichik bo'lgan device'lar uchun telefon*/
+@media screen and (max-width:440px) {
+    header {
+        padding: 5px 8px 5px 8px;
+    }
+    header img {
+        width: 36px;
+        height: 36px;
+    }
+    header p {
+        font-size: 18px;
+    }
+    nav span {
+        width: calc(100% / 6);
+        display: block;
+        background: rgb(82, 89, 235);
+        position: relative;
+        left: -105%;
+        animation: animate 4s cubic-bezier(0.16,-0.02, 0.37, 1.01) forwards;
+        animation-delay: 0.9s;
+    }
+    nav button {
+        height: 30px;
+        font-size: 11.5px;
+    }
+    @keyframes animate{
+        100% {
+            position: relative;
+            left: 0;
+        }
+    }
+    main {
+        display: grid;
+        grid-template-columns:  1fr;
+        width: 100%;
+    }
+    aside {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        left: -200px;
+        z-index: 20;
+    }
+    #asidebar {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 50%;
+    }
+    #asidebar i {
+        color: blue;
+    }
+    .aside {
+        left: 0;
+        transition: ease 1.5s;
+    }
+    section#lineSect {
+        width: 100%;
+    }
+    section#lineSect h3 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    section#lineSect h4 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    section#lineSect .information {
+        height: 73vh;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+    }
+    section#lineSect .information .bekat {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    section#lineSect .loc {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        /* background: #000; */
+    }
+    main img {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* https://newsdata.io/api/1/news?apikey=pub_405297a9882da9c33ad1a15de627a9d6e9492&q=kun.uz  */
+
+
+
+section {
+    position: absolute;
+}
+section#metroAbout {
+    display: none;
+}
+section#metroAbout.show {
+    display:block;
+}
+
+#danger {
+    font-size: 18px;
+    color: red;
+    position: absolute;
+    width: 100%;
+    font-weight: 900;
+    overflow: hidden;
+}
+#danger i {
+    position: relative;
+    animation: danger 10s linear infinite;
+
+}
+@keyframes danger {
+    0% {
+        left: -290px;
+    }
+    100% {
+        left: 125%
+    }
+}

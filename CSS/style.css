@@ -86,7 +86,7 @@ aside {
         position: relative;
         left: -105%;
         animation: animate 4s cubic-bezier(0.16,-0.02, 0.37, 1.01) forwards;
-        animation-delay: 0.9s;
+        animation-delay: 1.5s;
     }
     nav button {
         font-size: 18px;
@@ -170,7 +170,7 @@ aside {
         position: relative;
         left: -105%;
         animation: animate 4s cubic-bezier(0.16,-0.02, 0.37, 1.01) forwards;
-        animation-delay: 0.9s;
+        animation-delay: 1.5s;
     }
     nav button {
         height: 30px;

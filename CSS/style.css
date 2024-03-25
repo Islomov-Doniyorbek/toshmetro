@@ -55,6 +55,7 @@ nav span button {
     border: 1px solid aqua;
     background: rgb(82, 89, 235);
     z-index: 29;
+    color: lime;
 }
 /* main qism uchun stil */
 main {

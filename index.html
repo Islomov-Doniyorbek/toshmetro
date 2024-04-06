@@ -9,41 +9,28 @@
     <title>Toshkent Metropoliteni</title>
 </head>
 <body>
-    <p id="danger"><i>Sayt test rejimida!!!</i></p>
     <div class="container">
+        <div class="topBar">
+            <h3 id="title"><span class="title"></span>  yo'nalishining bekatlari</h3>
+            <div id="topBar"></div>
+            <button id="closebtn" onclick="blanktopBar()">^</button>
+        </div>
         <header>
-            <!-- Logotype -->
-            <p><img src="./picts/m.png" alt="logo">&nbsp;Toshkent Metropoliteni</p>
+            <h1><img src="./picts/m.png" alt="logo">&nbsp; Toshkent Metropoliteni</h1>
         </header>
         <nav>
-            <span style="--i:1;"><button id="btn">Metro</button></span>
-            <span style="--i:2;"><button id="btn">Chilonzor</button></span>
-            <span style="--i:3;"><button id="btn">O'zbekiston</button></span>
-            <span style="--i:4;"><button id="btn">Yunusobod</button></span>
-            <span style="--i:5;"><button id="btn">Sergeli</button></span>
-            <span style="--i:6;"><button id="btn">Halqa yo'li</button></span>
+            <div class="wrap">
+                <button id="btn">Chilonzor</button>
+                <button id="btn">O'zbekiston</button>
+                <button id="btn">Yunusobod</button>
+                <button id="btn">Sergeli</button>
+                <button id="btn">Yer usti</button>
+            </div>
         </nav>
         <main>
-            <img src="./picts/m.png" alt="logo">
-            <aside>
-                <h3>
-                    <b id="line"></b> yo'nalishining bekatlari
-                </h3>
-                <ol id="bekatlar">
-                    
-                </ol>
-            </aside>
-            
-            <section id="metroAbout">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt itaque, amet quisquam quo inventore vitae laudantium cupiditate quaerat ratione? Tempore ipsa officiis sunt, aliquid tenetur laboriosam facere nisi accusamus repellendus. Itaque dolores sapiente velit neque rem.</p>
-            </section>
-            <button id="asidebar"><i class="fa fa-navicon"></i></button>
+            <img src="./metro map.jpg" alt="map" id="head">
         </main>
-        <footer>
-            <p>&copy;0010002 &nbsp; Toshkent Metropoliteni 2024-yil</p>
-        </footer>
     </div>
-    
     <script src="./javascript/script.js"></script>
 </body>
 </html>

@@ -1,39 +1,55 @@
-function aside() {
-    let asidebar = document.querySelector("aside")
-    let asidebarBtn = document.querySelector("#asidebar")
-    let btnI = asidebarBtn.querySelector(".fa-navicon")
-    let i = 0;
-    asidebarBtn.onclick = () => {
-        i++;
-        asidebar.classList.toggle("aside");
-        if (i % 2 != 0) {
-            btnI.classList.remove("fa-navicon");
-            btnI.classList.toggle("fa-close");            
-        } else if(i%2==0){
-            btnI.classList.remove("fa-close");
-            btnI.classList.toggle("fa-navicon");  
-        }
-        // console.log(i);
+function Chilonzor() {
+    let chilonzor = ["Olmazor", "Chilonzor", "Mirzo Ulug'bek", "Novza", "Milliy bog'", "Xalqlar do'stligi", "Paxtakor", "Mustaqillik maydoni", "Amir Temur xiyoboni", "Hamid Olimjon", "Pushkin", "Buyuk Ipak yo'li"];
+    document.querySelector(".title").textContent = "Chilonzor";
+    topBar(chilonzor)
+}
+function Uzbekiston() {
+    let uzbekiston = ["Do'stlik", "Mashinasozlar","Toshkent","Oybek","Kosmonavtlar","O'zbekiston","Alisher Navoiy","G'afur G'ulom","Chorsu","Tinchlik","Beruniy"];
+    document.querySelector(".title").textContent = "O'zbekiston";
+    topBar(uzbekiston)
+}
+function Yunusobod() {
+    let yunusobod = ["Ming o'rik", "Yunus Rajabiy","Abdulla Qodiriy","Minor","Bodomzor","Shahriston","Yunusobod","Turkiston"];
+    document.querySelector(".title").textContent = "Yunusobod";
+    topBar(yunusobod)
+}
+function Sergeli() {
+    let sergeli = ["Choshtepa","O'zgarish","Sergeli","Yangihayot","Chinor"];
+    document.querySelector(".title").textContent = "Sergeli";
+    topBar(sergeli)
+}
+function Yerusti() {
+    let yerusti = ["Texnopark","Yashnabod","Tuzel","Olmos","Rohat","Yangiobod","Qo'yliq","Matonat","Qiyot","Tolariq","Xonobod","Quruvchilar","Turon","Qipchoq"];
+    document.querySelector(".title").textContent = "Yer usti";
+    topBar(yerusti)
+}
+function topBar(line) {
+    let topbar = document.querySelector("#topBar");
+    let topBar = document.querySelector(".topBar");
+    topBar.style.transform = "translateY(0%)"
+    for (let i = 0; i < line.length; i++){
+        topbar.innerHTML += `\
+        <p id="bekat">${line[i]}</p>`
     }
+    return topbar;
 }
-aside()
-
-function href() {
-    let urls = [
-        "./index.html",
-        "/chilonzor/ch.html",
-        "/uzbekiston/uz.html",
-        "/yunusobod/yun.html",
-        "/sergeli/ser.html",
-        "/yerusti/yer.html",
-    ]
-
-    let btns = document.querySelectorAll("#btn")
-    btns.forEach((e,i) => {
-        e.onclick = () => {
-            location.href = urls[i]
-        }
-    })
+function blanktopBar() {
+    let topbar = document.querySelector("#topBar");
+    let topBar = document.querySelector(".topBar");
+    topBar.style.transform = "translateY(-100%)"
+    let els = topbar.querySelectorAll("p")
+    topbar.innerHTML = " ";
+    return topbar;
 }
-
-// href()
+function buttonsEvent() {
+    let buttons = document.querySelectorAll("nav #btn")
+    let title = document.querySelector(".title")
+    let lines = ["Chilonzor", "O'zbekiston", "Yunusobod", "Sergeli", "Yer usti"];
+    let functionsLine = [Chilonzor, Uzbekiston, Yunusobod,Sergeli, Yerusti]
+    buttons.forEach((element, index) => {
+        element.addEventListener("click", functionsLine[index])
+    });
+    
+    
+}
+buttonsEvent()

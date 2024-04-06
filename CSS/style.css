@@ -74,7 +74,7 @@ nav .wrap #btn {
     background: transparent;
     border: 0.5px solid blue;
     border-radius: 3px;
-    background: linear-gradient(120deg, aqua, blue);
+    background: linear-gradient(60deg, aqua, blue);
 }
 .topBar {
     position: absolute;

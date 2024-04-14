@@ -74,7 +74,7 @@ nav .wrap #btn {
     background: transparent;
     border: 0.5px solid blue;
     border-radius: 3px;
-    background: linear-gradient(to bottom, aqua, blue);
+    background: linear-gradient(-60deg, blue, aqua);
 }
 .topBar {
     position: absolute;
@@ -111,7 +111,7 @@ nav .wrap #btn {
     gap: 5px;
     padding: 5px;
 }
-#topBar p {
+#topBar p#bekat {
     width: 100%;
     padding: 2px 5px;
     border-left: 1px solid aqua;
@@ -119,6 +119,43 @@ nav .wrap #btn {
     font-size: 18px;
     color: azure;
     font-weight: 700;
+    z-index: 350;
+}
+#topBar p#bekat:active {
+    background: aqua;
+}
+#topBar .nameStation {
+    position: relative;
+    color: aquamarine;
+    font-size: 18.5px;
+}
+#topBar p.malumot {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#topBar p.malumot mark {
+    background: rgb(255, 0, 43);
+    color: yellow;
+}
+#topBar p.loc {
+    font-size: 17px;
+    color: azure;
+    font-family: cursive;
+}
+#topBar p.loc a {
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+    -webkit-text-stroke: 1px silver;
+}
+#topBar p.memor {
+    color: gold;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
 }
 main {
     position: relative;

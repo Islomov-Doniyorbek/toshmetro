@@ -160,12 +160,78 @@ function Yunusobod() {
 function Sergeli() {
     let sergeli = ["Choshtepa","O'zgarish","Sergeli","Yangihayot","Chinor"];
     document.querySelector(".title").textContent = "Sergeli";
+
+    let about = [
+        "<h3 class=\"nameStation\">Choshtepa bekati</h3>\
+        <p class=\"malumot\">Sergeli yo'lining 1-bekati. Chilonzor yo'lining Olmazor bekati bilan bevosita ulangan. Bekat <mark>2020-yilning 26-dekabr</mark>ida ishga tushirilgan. Bekat Yer ustida joylashgan. Bekatdan Choshtepa jome masjidi, Wellmax Invest LLC, Sardor Avto Invest, 11-poliklinikaga borish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://www.google.com/maps/place/1-Bekat/@41.1912434,69.1885713,15z/data=!4m6!3m5!1s0x38ae61f42669cb9b:0x519ff4c5975042d4!8m2!3d41.238101!4d69.196244!16s%2Fg%2F11dzt0d8zz?entry=ttu\">choshtepa</a></p>",
+        "<h3 class=\"nameStation\">O'zgarish bekati</h3>\
+        <p class=\"malumot\">Sergeli yo'lining 2-bekati. Sergeli va Choshtepa bekatlari oralig'ida, Yer ustida joylashgan. Bekat <mark>2020-yilning 26-dekabr</mark>ida ishga tushirilgan. Bekat Toshkent halqa yoʻli koʻchasidan o'tgan.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://www.google.com/search?q=o%27zgarish+metro+bekati&sca_esv=63c115a30e488880&sxsrf=ACQVn0_2HljMN-QlcK9iJG2DnvhHvm8p8Q%3A1713435928361&ei=GPUgZqvaFd7OwPAPr4mfgAs&udm=&oq=obekati&gs_lp=Egxnd3Mtd2l6LXNlcnAiB29iZWthdGkqAggCMgYQABgHGB4yBhAAGAcYHjIIEAAYBxgKGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB5IqRxQiwVYiwVwAngAkAEAmAGKAaABigGqAQMwLjG4AQHIAQD4AQGYAgGgApgBmAMAiAYBkgcDMC4xoAeCBQ&sclient=gws-wiz-serp\">ozgarish</a></p>",
+        "<h3 class=\"nameStation\">Sergeli bekati</h3>\
+        <p class=\"malumot\">Sergeli yo'lining 3-bekati. O'zgarish va Yangihayot bekatlari oralig'ida, Yer ustida joylashgan. Bekat <mark>2020-yilning 26-dekabr</mark>ida ishga tushirilgan. Bekatdan Alaviya va Mirzo Tursunzoda koʻchalariga chiqish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://www.google.com/search?sca_esv=63c115a30e488880&sxsrf=ACQVn0-NzRqODdfoRBJSv4prcfmPd0n1xg:1713436631522&q=sergeli+bekati&npsic=0&rflfq=1&rldoc=1&rllag=41211183,69240349,1805&tbm=lcl&sa=X&ved=2ahUKEwicgZHuyMuFAxXlGBAIHexBCVAQtgN6BAgWEAE&biw=1366&bih=657&dpr=1\">sergeli</a></p>",
+        "<h3 class=\"nameStation\">Yangihayot bekati</h3>\
+        <p class=\"malumot\">Sergeli yo'lining 4-bekati. Sergeli va Chinor bekatlari oralig'ida, Yer ustida joylashgan. Bekat <mark>2020-yilning 26-dekabr</mark>ida ishga tushirilgan. Bekatdan Shokirariq koʻchasi va Mirzo Tursunzoda koʻchasi chiqish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://www.google.com/maps/place/4-Bekat/@41.213437,69.214078,15z/data=!4m2!3m1!1s0x0:0xd1821cf604f62813?sa=X&ved=1t:2428&ictx=111\">yangihayot</a></p>",
+        "<h3 class=\"nameStation\">Yangihayot bekati</h3>\
+        <p class=\"malumot\">Sergeli yo'lining 5-oxirgi bekati. Yer ustida joylashgan. Bekat <mark>2020-yilning 30-avgust</mark>ida ishga tushirilgan. Bekatdan Mirzo Tursunzoda koʻchasi chiqish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://www.google.com/search?sca_esv=63c115a30e488880&sxsrf=ACQVn08Z9hnhjnZkPmUdtYD7Ftt1OBNeSQ:1713436968304&q=chinor+bekati+location&npsic=0&rflfq=1&rldoc=1&rllag=41301407,69243992,4355&tbm=lcl&sa=X&ved=2ahUKEwiKxNyOysuFAxWaFxAIHa6IAv8QtgN6BAgWEAE&biw=1366&bih=657&dpr=1\">Chinor</a></p>",
+    ]
     topBar(sergeli)
+    bottomBar(about)
 }
 function Yerusti() {
     let yerusti = ["Texnopark","Yashnabod","Tuzel","Olmos","Rohat","Yangiobod","Qo'yliq","Matonat","Qiyot","Tolariq","Xonobod","Quruvchilar","Turon","Qipchoq"];
     document.querySelector(".title").textContent = "Yer usti";
+
+    let about = [
+        "<h3 class=\"nameStation\">Texnopark bekati</h3>\
+        <p class=\"malumot\">Shu yerdan O'zbekiston yo'lining Do'stlik bekatiga o'tiladi. Yer usti yo'lining 1-bekati. Bekat <mark>2020-yilning 30-avgust</mark>ida ishga tushirilgan. Bekat 2023-yilning 25-noyabrgacha Do'stlik-2 bekati deb nomlangan. Bekatdan Texnopark, Doʻstlik bogʻi chiqish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://www.google.com/maps/place/Do'stlik-2/@41.294657,69.323377,15z/data=!4m2!3m1!1s0x0:0x10773a3cd5c4658e?sa=X&ved=1t:2428&ictx=111\">texnopark</a></p>",
+        "<h3 class=\"nameStation\">Yashnobod bekati</h3>\
+        <p class=\"malumot\">Halqa yo'lining 2-bekati. 1-oktabr 2017-yilda qurilish boshlangan bo'lib,  2020-yil 3-fevralda tugallangan. Bekat <mark>2020-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Bekatdan Ohangaron yoʻli,Aviasozlar-4 dahasi, Tuzel-1 dahasi, Toshkent aviasozlar kolleji</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"loc\">Lokatsiya: <a href=\"https://yandex.uz/maps/10335/tashkent/stops/3814671300/?ll=69.349739%2C41.297678&tab=overview&z=16\">yashnobod</a></p>",
+        "<h3 class=\"nameStation\">Tuzel bekati</h3>\
+        <p class=\"malumot\">Halqa yo'lining 3-bekati. 1-oktabr 2017-yilda qurilish boshlangan bo'lib,  2020-yil 3-fevralda tugallangan. Bekat <mark>2020-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Yashnobod tumanida Ohangaron yoʻli, Birlashgan, Cho’lpon, Beshariq ko’chalari kesishmasida joylashgan.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://yandex.uz/maps/10335/tashkent/stops/3814673680/?ll=69.356210%2C41.291997&tab=overview&z=16\">tuzel</a></p>",
+        "<h3 class=\"nameStation\">Olmos bekati</h3>\
+        <p class=\"malumot\">Halqa yo'lining 4-bekati. Bekat <mark>2020-yilning 30-avgust</mark>ida foydalanishga topshirilgan. 2023-yil 9-avgust kuni qabul qilingan 349-sonli hukumat qarori bilan bekatga „Olmos“ nomi berilgan Bekat yaqinida	Ohangaron yoʻli koʻchasi, Iltifot koʻchasi, Koreya madaniyat markazi, Majburiy ijro byurosi joylashgan.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://yandex.uz/maps/10335/tashkent/stops/3814676760/?ll=69.360287%2C41.281878&tab=overview&z=16\">olmos</a></p>",
+        "<h3 class=\"nameStation\">Rohat bekati</h3>\
+        <p class=\"malumot\">Halqa yo'lining 5-bekati. Bekat <mark>2020-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Bekatdan	Ohangaron yoʻli, Toshkent halqa avtomobil yoʻli, Artel (shirkat), „Rohat“ avtosaloni, sobiq „Baxt“ koʻliga borish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://yandex.uz/maps/10335/tashkent/stops/3814683730/?ll=69.364814%2C41.265410&tab=overview&z=16\">rohat</a></p>",
+        "<h3 class=\"nameStation\">Yangiobod bekati</h3 >\
+        <p class=\"malumot\">Halqa yo'lining 6-bekati. Bekat <mark>2020-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Bekatdan	Toshkent halqa avtomobil yoʻli, Tolariq ko’chasi, Yangiobod buyum bozori, Qo'yliq asfalt-beton zavodiga borish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://yandex.uz/maps/10335/tashkent/stops/4098118629/?ll=69.358646%2C41.256463&tab=overview&z=16\">yangiobod</a></p>",
+        "<h3 class=\"nameStation\">Qo'yliq bekati</h3 >\
+        <p class=\"malumot\">Halqa yo'lining 7-bekati. Bekat <mark>2020-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Bekatdan	Toshkent halqa avtomobil yoʻli, Fargʻona yoʻli koʻchasi, Bektemir koʻchasi, Qo'yliq dehqon bozori, „Compas“ savdo majmuasiga borish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://yandex.uz/maps/10335/tashkent/stops/4098124439/?ll=69.327306%2C41.237495&tab=overview&z=16\">qoyliq</a></p>",
+
+        "<h3 class=\"nameStation\">Matonat bekati</h3 >\
+        <p class=\"malumot\">Halqa yo'lining 8-bekati.  Bekat <mark>2023-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Bekatdan Toshkent halqa avtomobil yoʻli, Baraka koʻchasi, Bektemir koʻchasi, Qoʻyliq 4-dahasiga borish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://yandex.uz/maps/10335/tashkent/stops/5092117536/?ll=69.308332%2C41.244474&tab=overview&z=16\">matonat</a></p>",
+        "<h3 class=\"nameStation\">Qiyot bekati</h3 >\
+        <p class=\"malumot\">Halqa yo'lining 9-bekati. Bekat <mark>2023-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Bekatdan Qoʻyliq 5-dahasi, 12-poliklinika, Ittifoq koʻchasi, Yangi Qoʻyliq koʻchasiga borish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://yandex.uz/maps/10335/tashkent/stops/5092045426/?ll=69.299642%2C41.244476&tab=overview&z=16\">qiyot</a></p>",
+        "<h3 class=\"nameStation\">Tolariq bekati</h3 >\
+        <p class=\"malumot\">Halqa yo'lining 10-bekati. Bekat <mark>2023-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Bekatdan Qoʻyliq 6-dahasi, Toshkent halqa avtomobil yoʻli, Yangi Qoʻyliq koʻchasiga borish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://yandex.uz/maps/10335/tashkent/stops/5092106826/?ll=69.285086%2C41.244518&tab=overview&z=16\">tolariq</a></p>",
+        "<h3 class=\"nameStation\">Xonobod bekati</h3 >\
+        <p class=\"malumot\">Halqa yo'lining 11-bekati. Bekat <mark>2023-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Bekatdan Nurli yoʻl koʻchasi, Nurli hayot koʻchasi, Xonobod koʻchasiga borish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://yandex.uz/maps/10335/tashkent/stops/5092135316/?ll=69.273606%2C41.232305&tab=overview&z=16\">xonobod</a></p>",
+        "<h3 class=\"nameStation\">Quruvchilar bekati</h3 >\
+        <p class=\"malumot\">Halqa yo'lining 12-bekati. Bekat <mark>2023-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Bekatdan Nurli yoʻl koʻchasi, Nurli hayot koʻchasi, Xonobod koʻchasi, Qurilish koʻchasiga borish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://www.google.com/maps/place/%22Quruvchilar%22+metro+bekati/@41.2217926,69.2466767,15z/data=!4m6!3m5!1s0x38ae61fbac6ec353:0x263959231c6272e1!8m2!3d41.2214375!4d69.2599375!16s%2Fg%2F11vj1g0g9j?entry=ttu\">quruvchilar</a></p>",
+        "<h3 class=\"nameStation\">Turon bekati</h3 >\
+        <p class=\"malumot\">Halqa yo'lining 13-bekati. Bekat <mark>2023-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Biroq texnik sabablarga ko'ra, bekat faoliyati to'xtatilgan. 2024-yilning 11-martidan boshlab, yo'lovchilarga xizmat qilib kelmoqda. Bekatdan Yangi Sergeli ko'chasi, Qipchoq ko'chasi va Sofdil ko'chasiga borish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://yandex.uz/maps/10335/tashkent/stops/5282732256/?ll=69.231871%2C41.209822&tab=overview&z=16\">turon</a></p>",
+        "<h3 class=\"nameStation\">Qipchoq bekati</h3 >\
+        <p class=\"malumot\">Shu yerdan CHilonzor yo'lining Chinor bekatiga o'tiladi. Halqa yo'lining 14-bekati. Bekat <mark>2020-yilning 30-avgust</mark>ida foydalanishga topshirilgan. Biroq texnik sabablarga ko'ra, bekat faoliyati to'xtatilgan. 2024-yilning 11-martidan boshlab, yo'lovchilarga xizmat qilib kelmoqda. Bekatdan Qipchoq koʻchasi, Mirzo Tursunzoda koʻchasiga borish mumkin.</p>\
+        <p class=\"loc\">Lokatsiya: <a href=\"https://www.google.com/maps/place/Qipchoq+bekati/@41.2054785,69.2215031,15z/data=!4m2!3m1!1s0x0:0xd71d7cffd9e53512?sa=X&ved=1t:2428&ictx=111\">qipchoq</a></p>",
+    ]
     topBar(yerusti)
+    bottomBar(about)
 }
 
 function bottomBar(line) {
